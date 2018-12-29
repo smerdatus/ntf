@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import V1 from './V1';
+import V2 from './V2';
+import V3 from './V3';
+import V4 from './V4';
 import Gen1 from './Gen1';
 import Gen2 from './Gen2';
 import Bath from './Bath';
@@ -23,6 +26,15 @@ export default class App extends Component {
             </div>
             <div onClick={ () => this.setState({ person: 'v1' }) } style={ { paddingBottom: 10 } }>
                 <button className="pure-button pure-button-primary">V1</button>
+            </div>
+            <div onClick={ () => this.setState({ person: 'v2' }) } style={ { paddingBottom: 10 } }>
+                <button className="pure-button pure-button-primary">V2</button>
+            </div>
+            <div onClick={ () => this.setState({ person: 'v3' }) } style={ { paddingBottom: 10 } }>
+                <button className="pure-button pure-button-primary">V3</button>
+            </div>
+            <div onClick={ () => this.setState({ person: 'v4' }) } style={ { paddingBottom: 10 } }>
+                <button className="pure-button pure-button-primary">V4</button>
             </div>
             <div onClick={ () => this.setState({ person: 'gen1' }) } style={ { paddingBottom: 10 } }>
                 <button className="pure-button pure-button-primary">Gen1</button>
@@ -57,6 +69,27 @@ export default class App extends Component {
               <V1 />
           </div>
         );
+    } else if (this.state.person === 'v2') {
+      return (
+          <div>
+              {this.renderButtons()}
+              <V2 />
+          </div>
+        );
+    } else if (this.state.person === 'v3') {
+        return (
+            <div>
+                {this.renderButtons()}
+                <V3 />
+            </div>
+          );
+    } else if (this.state.person === 'v4') {
+        return (
+            <div>
+                {this.renderButtons()}
+                <V4 />
+            </div>
+          );
     } else if (this.state.person === 'gen1') {
         return (
             <div>

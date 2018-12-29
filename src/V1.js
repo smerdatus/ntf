@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import { Player } from 'video-react';
 import './App.css';
-import overlay from './assets/videos/video_overlay.png';
-import video_0 from './assets/videos/celestebrightt_26882423_1461561547294305_9018585956072030208_n.mp4';
-import img_0 from './assets/videos/celestebrightt_26882423_1461561547294305_9018585956072030208_n.mp4.png';
-import video_1 from './assets/videos/celestebrightt_29709947_177941092853936_6287299150262304768_n.mp4';
-import img_1 from './assets/videos/celestebrightt_29709947_177941092853936_6287299150262304768_n.mp4.png';
-import img_2 from './assets/celestebrightt_39016320_911092212417374_8131953016522670080_n.jpg';
-import img_3 from './assets/celestebrightt_41630686_836302513222675_4294323764385572848_n.jpg';
+// import overlay from './assets/videos/video_overlay.png';
+import video_0 from './assets/videos/01 jump out of bikini.mp4';
+import img_0 from './assets/videos/01 jump out of bikini.mp4.png';
+import video_1 from './assets/videos/02 pigtail.mp4';
+import img_1 from './assets/videos/02 pigtail.mp4.png';
 
 export default class V1 extends Component {
   constructor(props) {
@@ -80,18 +78,15 @@ export default class V1 extends Component {
             <div style={ { display: 'flex', flexWrap: 'wrap', justifyContent: 'center' } }>
                 <div style={ { padding: '1vh' } } onClick={ () => this.setState({ video: video_0, mode: 'video' }) } >
                     <img src={ img_0 } className={ this.state.picSizeMode } />
-                    <img src={ overlay } style={ { height: '2vh' } }/>
+                    {/* <img src={ overlay } style={ { height: '2vh' } }/> */}
                 </div>
                 <div style={ { padding: '1vh' } } onClick={ () => this.setState({ video: video_1, mode: 'video' }) } >
                     <img src={ img_1 } className={ this.state.picSizeMode } />
-                    <img src={ overlay } style={ { height: '2vh' } }/>
+                    {/* <img src={ overlay } style={ { height: '2vh' } }/> */}
                 </div>
-                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_2, mode: 'image' }) } >
-                    <img src={ img_2 } className={ this.state.picSizeMode } />
-                </div>
-                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_3, mode: 'image' }) } >
-                    <img src={ img_3 } className={ this.state.picSizeMode } />
-                </div>
+                {/* <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_3, mode: 'image' }) } >
+                    <img src={ some_actual_image } className={ this.state.picSizeMode } />
+                </div> */}
             </div>
         </div>
     );

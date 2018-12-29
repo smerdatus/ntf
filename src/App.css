@@ -1,3 +1,23 @@
+@media only screen and (max-width: 850px) {
+  .gallery {
+    width: 100vw;
+  }
+
+  .wider {
+    width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 860px) {
+  .gallery {
+    height: 90vh;
+  }
+
+  .wider {
+    height: 100vh;
+  }
+}
+
 .App {
   text-align: center;
 }
@@ -30,3 +50,9 @@
     transform: rotate(360deg);
   }
 }
+
+.narrow {
+  width: 20vh;
+}
+
+@import "~video-react/dist/video-react.css";

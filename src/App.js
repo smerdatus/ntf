@@ -1,28 +1,46 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import V1 from './V1';
 import './App.css';
 
-class App extends Component {
-  render() {
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      person: 'hide'
+    };
+  }
+
+  renderButtons = () => {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+        <div style={ { display: 'flex', justifyContent: 'space-around', flexWrap: 'wrap', padding: 20 } }>
+            <div onClick={ () => this.setState({ person: 'hide' }) } style={ { paddingBottom: 10 } }>
+                <button className="pure-button pure-button-primary">Hide</button>
+            </div>
+            <div onClick={ () => this.setState({ person: 'cele' }) } style={ { paddingBottom: 10 } }>
+                <button className="pure-button pure-button-primary">Cele</button>
+            </div>
+        </div>
+      );
+  }
+
+  render() {
+    if (this.state.person === 'hide') {
+      return (
+          <div>
+              {this.renderButtons()}
+          </div>
+      )
+    } else if (this.state.person === 'cele') {
+      return (
+          <div>
+              {this.renderButtons()}
+              <V1 />
+          </div>
+      );
+      } else {
+      return (
+          <div>Error</div>
+      )
+    }
   }
 }
-
-export default App;

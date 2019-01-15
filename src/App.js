@@ -3,8 +3,10 @@ import V1 from './V1';
 import V2 from './V2';
 import V3 from './V3';
 import V4 from './V4';
+import V5 from './V5';
 import Gen1 from './Gen1';
 import Gen2 from './Gen2';
+import Gen3 from './Gen3';
 import Bath from './Bath';
 import Jumper from './Jumper';
 import Shower from './Shower';
@@ -36,11 +38,17 @@ export default class App extends Component {
             <div onClick={ () => this.setState({ person: 'v4' }) } style={ { paddingBottom: 10 } }>
                 <button className="pure-button pure-button-primary">V4</button>
             </div>
+            <div onClick={ () => this.setState({ person: 'v5' }) } style={ { paddingBottom: 10 } }>
+                <button className="pure-button pure-button-primary">V5</button>
+            </div>
             <div onClick={ () => this.setState({ person: 'gen1' }) } style={ { paddingBottom: 10 } }>
                 <button className="pure-button pure-button-primary">Gen1</button>
             </div>
             <div onClick={ () => this.setState({ person: 'gen2' }) } style={ { paddingBottom: 10 } }>
                 <button className="pure-button pure-button-primary">Gen2</button>
+            </div>
+            <div onClick={ () => this.setState({ person: 'gen3' }) } style={ { paddingBottom: 10 } }>
+                <button className="pure-button pure-button-primary">Gen3</button>
             </div>
             <div onClick={ () => this.setState({ person: 'bath' }) } style={ { paddingBottom: 10 } }>
                 <button className="pure-button pure-button-primary">bath</button>
@@ -90,6 +98,13 @@ export default class App extends Component {
                 <V4 />
             </div>
           );
+    } else if (this.state.person === 'v5') {
+        return (
+            <div>
+                {this.renderButtons()}
+                <V5 />
+            </div>
+          );
     } else if (this.state.person === 'gen1') {
         return (
             <div>
@@ -102,6 +117,13 @@ export default class App extends Component {
             <div>
                 {this.renderButtons()}
                 <Gen2 />
+            </div>
+          );
+    } else if (this.state.person === 'gen3') {
+        return (
+            <div>
+                {this.renderButtons()}
+                <Gen3 />
             </div>
           );
     } else if (this.state.person === 'bath') {

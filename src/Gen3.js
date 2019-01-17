@@ -16,6 +16,23 @@ import img_13 from './assets/gen3/15.jpg';
 import img_14 from './assets/gen3/16.jpg';
 import img_15 from './assets/gen3/17.jpg';
 import img_16 from './assets/gen3/18.jpg';
+import img_17 from './assets/gen3/19.jpg';
+import img_18 from './assets/gen3/20.jpg';
+import img_19 from './assets/gen3/21.jpg';
+import img_20 from './assets/gen3/22.jpg';
+import img_21 from './assets/gen3/23.jpg';
+import img_22 from './assets/gen3/24.jpg';
+import img_23 from './assets/gen3/25.jpg';
+import img_24 from './assets/gen3/26.jpg';
+import img_25 from './assets/gen3/27.jpg';
+import img_26 from './assets/gen3/28.jpg';
+import img_27 from './assets/gen3/29.jpg';
+import img_28 from './assets/gen3/30.jpg';
+import img_29 from './assets/gen3/31.jpg';
+import img_30 from './assets/gen3/32.jpg';
+import img_31 from './assets/gen3/33.jpg';
+import img_32 from './assets/gen3/34.jpg';
+
 import './App.css';
 
 export default class Gen3 extends Component {
@@ -114,6 +131,54 @@ export default class Gen3 extends Component {
                 </div>
                 <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_16 }) } >
                     <img src={ img_16 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_17 }) } >
+                    <img src={ img_17 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_18 }) } >
+                    <img src={ img_18 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_19 }) } >
+                    <img src={ img_19 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_20 }) } >
+                    <img src={ img_20 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_21 }) } >
+                    <img src={ img_21 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_22 }) } >
+                    <img src={ img_22 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_23 }) } >
+                    <img src={ img_23 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_24 }) } >
+                    <img src={ img_24 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_25 }) } >
+                    <img src={ img_25 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_26 }) } >
+                    <img src={ img_26 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_27 }) } >
+                    <img src={ img_27 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_28 }) } >
+                    <img src={ img_28 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_29 }) } >
+                    <img src={ img_29 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_30 }) } >
+                    <img src={ img_30 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_31 }) } >
+                    <img src={ img_31 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ image: img_32 }) } >
+                    <img src={ img_32 } className={ this.state.picSizeMode } />
                 </div>
             </div>
         </div>

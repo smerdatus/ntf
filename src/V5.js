@@ -5,6 +5,8 @@ import video_0 from './assets/videos/42jumping.mp4';
 import img_0 from './assets/videos/42jumping.mp4.png';
 import video_1 from './assets/videos/calvin.mp4';
 import img_1 from './assets/videos/calvin.mp4.png';
+import video_2 from './assets/videos/43sunday.mp4';
+import img_2 from './assets/videos/43sunday.mp4.png';
 
 export default class V5 extends Component {
   constructor(props) {
@@ -77,6 +79,9 @@ export default class V5 extends Component {
                 </div>
                 <div style={ { padding: '1vh' } } onClick={ () => this.setState({ mode: 'video', video: video_1 }) }>
                     <img src={ img_1 } className={ this.state.picSizeMode } />
+                </div>
+                <div style={ { padding: '1vh' } } onClick={ () => this.setState({ mode: 'video', video: video_2 }) }>
+                    <img src={ img_2 } className={ this.state.picSizeMode } />
                 </div>
             </div>
         </div>

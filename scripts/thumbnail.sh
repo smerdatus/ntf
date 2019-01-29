@@ -14,6 +14,9 @@ do
   echo "===================================================="
 done
 
+# ffmpeg -y -an -ss 00:00:00 -vcodec png -r 1 -vframes 1 43sunday.mp4.png -i 
+
+
 # for f in $FILES
 # do
 #   echo "Deleting $f ..."

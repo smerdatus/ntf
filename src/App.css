@@ -6,6 +6,11 @@
   .wider {
     width: 100vw;
   }
+
+  .video-react {
+    width: 100vw !important;
+    height: 26vh !important;
+  }
 }
 
 @media only screen and (min-width: 860px) {
@@ -15,6 +20,11 @@
 
   .wider {
     height: 100vh;
+  }
+
+  .video-react {
+    width: 95vw !important;
+    height: 95vh !important;
   }
 }
 

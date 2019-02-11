@@ -59,7 +59,7 @@ export default class V3 extends Component {
   renderImageOrVideoContainer = () => {
     if (this.state.mode === 'video') {
       return (
-          <Player ref="player" loop fluid={ false } width={ 350 }>
+          <Player ref="player" loop fluid={ false }>
               <source src={ this.state.video } />
           </Player>
       )

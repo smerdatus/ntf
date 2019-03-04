@@ -4,6 +4,7 @@ import V2 from './V2';
 import V3 from './V3';
 import V4 from './V4';
 import V5 from './V5';
+import Val from './Val';
 import Gen1 from './Gen1';
 import Gen2 from './Gen2';
 import Gen3 from './Gen3';
@@ -62,6 +63,9 @@ export default class App extends Component {
             </div>
             <div onClick={ () => this.setState({ person: 'shower' }) } style={ { paddingBottom: 10 } }>
                 <button className="pure-button pure-button-primary">Shower</button>
+            </div>
+            <div onClick={ () => this.setState({ person: 'val' }) } style={ { paddingBottom: 10 } }>
+                <button className="pure-button pure-button-primary">Val</button>
             </div>
         </div>
       );
@@ -156,6 +160,13 @@ export default class App extends Component {
             <div>
                 {this.renderButtons()}
                 <Shower />
+            </div>
+          );
+    } else if (this.state.person === 'val') {
+        return (
+            <div>
+                {this.renderButtons()}
+                <Val />
             </div>
           );
     } else {
